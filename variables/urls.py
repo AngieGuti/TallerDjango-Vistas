@@ -19,5 +19,5 @@ from django.urls import path
 from . import views
 urlpatterns = [
     path('', views.variables_view, name='variables_view'),
-    path('<int:pk>', views.variable_view, name='variable_view'),
+    path('<int:pk>', views.variable_view, name='variable_view'), #Get by id, se puede tener múltiples urls dinámicas, i.e, /<int:id>/<int:category>
 ]
